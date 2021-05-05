@@ -1,0 +1,8 @@
+COMMAND TO INSERT DATA INTO SQL TABLE
+insert into applicant_info.personal_info (FirstName, LastName, PhoneNo, Gender, C_or_Cpp, C_Sharp, Visual_Basic, Delphi, Hobbies) values('" + firstName + "','" + lastName + "','" + phno + "','" + gender + "','" + Corcpp + "','" + cSharp + "','" + visualBasic + "','" + delphi + "','" + hobbies + "');
+
+COMMAND TO SEARCH RECORD BY NAME 
+select * from applicant_info.personal_info where FirstName = '" + searchName + "' OR LastName = '" + searchName + "';
+
+COMMAND TO SEARCH BY PHONE NUMBER 
+select * from applicant_info.personal_info where PhoneNo = '" + searchPhone + "';
